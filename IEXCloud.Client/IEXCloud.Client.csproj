@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>IEXCloud Client</Title>
+        <Authors>Roy Gerritse</Authors>
+        <PackageId>IEXCloud.Client</PackageId>
+        <AssemblyVersion>1.0.1</AssemblyVersion>
+        <FileVersion>1.0.1</FileVersion>
+        <RepositoryUrl>https://github.com/RoyGerritse/Finnhub</RepositoryUrl>
+        <Description>.NET library to connect to iexcloud.io.</Description>
+        <PackageProjectUrl>https://github.com/RoyGerritse/IEXCloud</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>IEXCloud</PackageTags>
+        <PackageVersion>1.0.0</PackageVersion>
+        <RootNamespace>IEXCloud.Client</RootNamespace>
+    </PropertyGroup>
+</Project>
