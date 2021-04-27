@@ -6,32 +6,8 @@ dotnet add package IEXCloud.Client
 ```
 
 ## Usage
-### Crypto Exchanges
+### Ref data isin
 ```
-var client = new FinnhubClient("token");
-var result = await client.CryptoExchanges();
-```
-
-### Crypto Symbol
-```
-var client = new FinnhubClient("token");
-var result = await client.CryptoSymbol("KRAKEN");
-```
-
-### Crypto Candle
-```
-var client = new FinnhubClient("token");                   
-var result = await client.CryptoCandle("symbol", "D", 1572651390, 1575243390);
-```
-
-### Forex Exchanges
-```
-var client = new FinnhubClient("token");                   
-var result = await client.ForexExchanges();
-```
-
-### Crypto Symbol
-```
-var client = new FinnhubClient("token");
-var result = await client.ForexSymbol("forex.com");
+var client = new IEXCloudClient("token");
+var mappings = await client.RefDataIsin("NL0000852564");
 ```
