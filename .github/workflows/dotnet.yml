@@ -20,6 +20,6 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal --configuration Release 
     - name: Create the package
-      run: dotnet pack --configuration Release Finnhub.Client
+      run: dotnet pack --configuration Release IEXCloud.Client
     - name: Publish the package to NuGet
-      run: dotnet nuget push Finnhub.Client/bin/Release/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_API_TOKEN}} --skip-duplicate
+      run: dotnet nuget push IEXCloud.Client/bin/Release/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_API_TOKEN}} --skip-duplicate
